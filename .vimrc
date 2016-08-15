@@ -17,6 +17,18 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 " JavaScript syntax
 Plugin 'pangloss/vim-javascript'
+" TypeScript support
+Plugin 'shougo/vimproc.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'quramy/vim-js-pretty-template'
+Plugin 'jason0x43/vim-js-indent'
+Plugin 'quramy/vim-dtsm'
+Plugin 'mhartington/vim-typings'
+Plugin 'quramy/tsuquyomi'
+" As syntastic is installed:
+" https://github.com/Quramy/tsuquyomi#integrate-with-syntastic
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
